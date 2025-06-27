@@ -1,0 +1,37 @@
+_address	name	description	unit	type	len	factor	offset	formula	role	room	poll	wp	cw	isScale
+32100	My Battery Battery Voltage		V	int16be	1	0.01	0		level		true	false	false	false
+32101	My Battery Battery Current		A	int16be	1	0.01	0		level		true	false	false	false
+32102	My Battery Battery Power	negative = discharge	W	int32be	2	1	0		level		true	false	false	false
+32104	My Battery_SOC		%	uint16be	1	1	0		level		true	false	false	false
+32105	batt total energy		wh	uint16be	1	1	0		level		true	false	false	false
+32200	My Battery AC Voltage		V	uint16be	1	0.1	0		level		true	false	false	false
+32201	My Battery AC Current		A	int16be	1	0.01	0		level		true	false	false	false
+32202	My Battery AC Power		W	int32be	2	1	0		level		true	false	false	false
+32300	My Battery AC Offgrid Voltage		V	uint16be	1	0.01	0		level		true	false	false	false
+32301	My Battery AC Offgrid Current		A	int16be	1	0.01	0		level		true	false	false	false
+32302	My Battery AC Offgrid Power	positive value means feeds into the grid	W	uint16be	1	1	0		level		true	false	false	false
+33000	My Battery Total Charging Energy		kWh	uint32be	2	0.01	0		level		true	false	false	false
+33002	My Battery Total Discharging Energy		kwh	uint32be	2	0.01	0		level		true	false	false	false
+33004	My Battery Daily Charging Energy		kwh	uint32be	2	0.01	0		level		true	false	false	false
+33006	My Battery Daily Discharging Energy		kwh	uint32be	2	0.01	0		level		true	false	false	false
+33008	My Battery Monthly Charging Energy		kwh	uint32be	2	0.01	0		level		true	false	false	false
+33010	My Battery Monthly Discharging Energy		kwh	uint32be	2	0.01	0		level		true	false	false	false
+35000	My Battery Internal Temperature		°C	uint16be	1	0.1	0		level		true	false	false	false
+35001	My Battery Internal MOS1 Temperature		°C	uint16be	1	0.1	0		level		true	false	false	false
+35002	My Battery Internal MOS2 Temperature		°C	uint16be	1	0.1	0		level		true	false	false	false
+35010	My Battery Max Cell Temperature		°C	int16be	1	0.1	0		level		false	false	false	false
+35011	My Battery Min Cell Temperature		°C	int16be	1	0.1	0		level		false	false	false	false
+35100	My Battery Inverter State	0:sleep 1:standby 2:charge 3:discharge 4:backup mode 5:ota upgrade		uint16be	1	1	0		level		true	false	false	false
+36000	Alarm Word			rawhex	2	1	0		level		true	false	false	false
+36001	Network Word			rawhex	2	1	0		level		false	false	false	false
+36100	Fault Word			rawhex	2	1	0		level		true	false	false	false
+42000	My Battery RS485 Control Mode	command_on: 21930 # 0x55AA in decimal  # command_off: 21947 # 0x55BB in decimal		uint16be	1	1	0		level		true	false	false	false
+42010	My Battery Force Charge/Discharge Mode	0:stop 1:charge 2:discharge		uint16be	1	1	0		level		false	false	false	false
+42011	My Battery Charge to SOC		%	uint16be	1	1	0		level		false	false	false	false
+42020	My Battery Forcible Charge Power			uint16be	1	1	0		level		true	false	false	false
+42021	My Battery Forcible Discharge Power			uint16be	1	1	0		level		true	false	false	false
+43000	My Battery User Work Mode	0: manual 1:Shelly 2:Boerse		uint16be	1	1	0		level		true	false	false	false
+44000	My Battery charging cutoff capaKJ		%	uint16be	1	0.1	0		level		true	false	false	false
+44001	My Battery discharging cutoff capaKJ		%	uint16be	1	0.1	0		level		true	false	false	false
+44002	My Battery max charging powerKJ		W	uint16be	1	1	0		level		true	false	false	false
+44003	My Battery max discharging powerKJ		W	uint16be	1	1	0		level		true	false	false	false
