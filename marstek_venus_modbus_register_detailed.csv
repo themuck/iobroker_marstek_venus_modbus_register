@@ -1,0 +1,33 @@
+name,address,count,type,scale,unit
+device name,31000,20,char,, 
+soft version,31100,2,u16,0.01,
+SN code,31200,20,char,, 
+battery voltage (average),32100,2,u16,0.01,V
+battery current (average),32101,2,s16,0.01,A
+battery power,32102,4,s32,1,W
+battery SOC,32104,2,u16,1,%
+battery total energy,32105,2,u16,1,kWh
+AC voltage,32200,2,u16,0.1,V
+AC current,32201,2,u16,0.01,A
+AC power,32202,4,s32,1,W
+AC frequency,32204,2,u16,0.01,Hz
+AC offgrid voltage,32300,2,u16,0.1,V
+AC offgrid current,32301,2,u16,0.01,A
+AC offgrid power,32302,4,s32,1,W
+total charging energy,33000,4,u32,0.01,kWh
+total discharging energy,33002,4,u32,0.01,kWh
+daily charging energy,33004,4,u32,0.01,kWh
+daily discharging energy,33006,4,u32,0.01,kWh
+monthly charging energy,33008,4,u32,0.01,kWh
+monthly discharging energy,33010,4,u32,0.01,kWh
+internal temperature,35000,2,s16,0.1,°C
+internal MOS1 temperature,35001,2,s16,0.1,°C
+internal MOS2 temperature,35002,2,s16,0.1,°C
+max cell temperature,35010,2,s16,0.1,°C
+min cell temperature,35011,2,s16,0.1,°C
+inverter state,35100,2,u16,, 
+battery charge voltage limit,35110,2,u16,100,mV
+battery charge current limit,35111,2,u16,100,mA
+battery discharge current limit,35112,2,u16,100,mA
+alarm word,36000,2,bit,, 
+fault word,36100,4,bit,, 
